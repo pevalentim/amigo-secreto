@@ -4,6 +4,7 @@ let amigos = [];
 let lista = document.getElementById("listaAmigos");
 
 function adicionarAmigo(){
+    resultado.innerHTML = "";
     let amigo = document.getElementById("amigo");
     if (amigo.value.trim() === ""){
         alert("Por favor, insira um nome.");
@@ -32,7 +33,7 @@ function sortearAmigo(){
         let sorteado = amigos[indice];
         let resultado = document.getElementById("resultado");
         lista.innerHTML = "";
-        amigos = []
+        amigos = [];
         resultado.innerHTML = `O amigo sorteado é: ${sorteado}`;
     }
 }
