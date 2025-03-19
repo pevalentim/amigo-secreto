@@ -32,6 +32,7 @@ function sortearAmigo(){
         let sorteado = amigos[indice];
         let resultado = document.getElementById("resultado");
         lista.innerHTML = "";
+        amigos = []
         resultado.innerHTML = `O amigo sorteado é: ${sorteado}`;
     }
 }
